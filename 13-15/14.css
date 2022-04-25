@@ -1,0 +1,17 @@
+body {
+    font-family: sans-serif;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 48px;
+    color: blue;
+    border: 3px solid #444;
+}
+
+td, tr {
+    padding: 3px; /* Поля вокруг содержимого таблицы */
+    border: 3px solid black; /* Параметры рамки */
+}
+
+.caption {
+    margin-left: 900px;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html5>
+<html lang="ru">
+
+<head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>САЙТ ПРО АРТЕМА</title>
+</head>
+
+<!--БЕГ СТРОКА-->
+<div class="header">
+    <marquee>
+        <h1>THIS IS OUR COLLEGE PROJECT HAVE FUN WHILE WATCHING IT :)</h1>
+    </marquee>
+</div>
+<!--БЕГ СТРОКА-->
+
+<!--СТАТЬЯ-->
+<div class="statia">
+    <h2>Статьи Мутена Роши</h2>
+    <p><img src="statia.png" width="200" height="200"></p>
+    <p>1. Внутренняя <a href="">оптимизация</a> сайта</p>
+    <p>2. <a href="">Генерация кнопок</a> для сайта</p>
+    <p>3. <a href="https://translate.google.com/?hl=ru">Перевод текста</a> онлайн</p>
+    <p>4. <a href="https://myrusakov.ru/">Создание сайта с нуля</a></p>
+    <p>5. Безопасные семейства шрифтов</p>
+    <p></p>
+</div>
+<!--СТАТЬЯ-->
+
+<!--ОСНОВА-->
+
+<body>
+    <div class="body">
+        <h1><a href="https://yandex.ru">Ссылка на Яндекс</a></h1>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="red" />
+        </svg>
+        <br>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="yellow" />
+        </svg>
+        <br>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="green" />
+        </svg>
+
+        <stih>
+            <br>
+            <p>
+            <h1>Стихотворение</h1>
+            </p>
+            <br>
+            <p>Мириады маленьких дел</p>
+            <p>Пьют по капле гаснущий день,</p>
+            <p>А дела большие сушит жажда.</p>
+            <p>Оставляя все на "потом",</p>
+            <p>Прозреваем задним числом,</p>
+            <p>Только день не повторится дважды.</p>
+            <br>
+            <p>И.Тальков</p>
+            <br>
+        </stih>
+    </div>
+    <!--ОСНОВА-->
+
+    <div class="clock" onload="clock_form()">
+        <div id="id_clock"></div>
+        <script>digitalClock();</script>
+    </div>
+
+    <!--ЛЕГЕНДЫ-->
+    <coolbuttons>
+        <br>
+        <div class="artem">
+            <h2>Артем</h2>
+            <p>Он реально крутой парень как бы, если вы в нем заинтересованы,</p>
+            <p>то вот кнопка тут подробнее инфа типа да. (Это он на фоне сайта кстати)</p>
+            <button onclick="window.location.href = 'https:vk.com/jacketold';">Подробнее</button>
+        </div>
+        <br>
+        <div class="viktor">
+            <h2>Витя</h2>
+            <p>Он реально крутой пацан! Как бы жестко играет на танках в овер(дроч)вотч.</p>
+            <p>Если вам нужен крутой танк, то вот кнопка тут подробнее инфа о нем типа да.</p>
+            <button onclick="window.location.href = 'https:vk.com/unholysurfer';">Подробнее</button>
+        </div>
+        <div class="losolka">
+            <h2>Леха</h2>
+            <p>Он реально крутой разработчик сайта! Он тоже жестко играет на танках в овервотчик.</p>
+            <p>Если вам нужен крутой танк, то вот кнопка тут подробнее инфа о нем типа да.</p>
+            <button onclick="window.location.href = 'https:vk.com/yanuleviy';">Подробнее</button></a>
+        </div>
+    </coolbuttons>
+    <!--ЛЕГЕНДЫ-->
+
+
+
+</body>
+
+<!--РЕГИСТРАЦИЯ-->
+<regisration>
+    <div class="registration">
+        <form name="register" action="" method="get">
+            <fieldset>
+                <legend>Общая информация</legend>
+                <label for="familia">Фамилия</label>
+                <input type="text" placeholder="Арсеньев" id="familia" name="fname">
+                <label for="imya">Имя</label>
+                <input type="text" placeholder="Артём" id="imya" name="name">
+                <label for="otchestvo">Отчество</label>
+                <input type="text" placeholder="Антонович" id="otchestvo" name="otchestvo">
+                <label for="email">E-mail</label>
+                <input type="text" placeholder="artyomarsenev@yandex.ru" id="email" name="email">
+            </fieldset>
+            <fieldset>
+                <legend>Пол</legend>
+                <input type="radio" id="Muzh" name="Sex">
+                <label for="Muzh">Мужской</label>
+                <input type="radio" id="Zhen" name="Sex">
+                <label for="Zhen">Женский</label>
+            </fieldset>
+            <fieldset>
+                <legend>Хобби</legend>
+                <input type="checkbox">
+                <label for="beats">Слушать лосолку битс</label>
+                <input type="checkbox">
+                <label for="manga">Чтение манги жеское</label>
+                <input type="checkbox">
+                <label for="pelm">Готовка жареных пельменей</label>
+                <input type="checkbox">
+                <label for="owo">Играть в OWOwatch</label>
+            </fieldset>
+        </form>
+        <input type="button" onclick="Validate()" value="Отправить">
+        <input type="button" onclick="window.location.reload()" value="Очистить">
+    </div>
+</regisration>
+<!--РЕГИСТРАЦИЯ-->
+
+<!--ГИФКИ ТУТА-->
+<div class="gif_artem">
+    <img src="rule134-goku-rules.gif" alt="" width="300" height="600">
+</div>
+<div class="gif_viktor">
+    <img src="rule119-no.gif" alt="" width="400" height="400">
+</div>
+<div class="gif_losolka">
+    <img src="goku-rules.gif" alt="">
+</div>
+<!--ГИФКИ ТУТА-->
+
+<!--ПОРТАЛ В ДРУГОЙ САЙТ-->
+<div class="portal">
+</div>
+<div class="portal_main">
+    <img src="portal.png" alt="" width="685" height="424" onclick="window.location.href = 'StudioKiss/SK.html'">
+</div>
+<div class="eto_portal">
+    <img src="eto portal.gif" width="700" height="508">
+</div>
+<div class="pocringeval">
+    <img src="pocringeval.jpg">
+</div>
+<!--ПОРТАЛ В ДРУГОЙ САЙТ-->
+
+<!--14 и 15 ЗАДАНИЯ-->
+<div class="zadanie_button14">
+    <a class="a1" href="13-15/14.html">14 задание</a>
+</div>
+<div class="zadanie_button15">
+    <a class="a2" href="13-15/15.html">15 задание</a>
+</div>
+<div class="zadanie_button13">
+    <a class="a3" href="13-15/13.html">13 задание</a>
+</div>
+<!--14 и 15 ЗАДАНИЯ-->
+
+
+</html>
