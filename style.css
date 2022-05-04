@@ -262,3 +262,38 @@ coolbuttons {
    .a3:hover {
     color: #54ddff;
 }
+
+.pickle_rick_wrapper {
+    position: relative;
+    margin-bottom: 90px;
+}
+
+.pickle_rick {
+    position: absolute;
+    z-index: 1;
+    width: 956px;
+    margin-left: 720px;
+    margin-top: 180px;
+}
+
+.pickle_rick_portal {
+    position: absolute;
+    margin-left: 800px;
+    width: 800px;
+    height: auto;
+    transition: all 0.5s ease;
+    animation: rotate 7s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(360deg);
+    }
+  }
+
+.pickle_pickle_rick {
+    width: 350px;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 380px;
+}
